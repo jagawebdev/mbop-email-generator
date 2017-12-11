@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-us" ng-app="mbopApp" ng-controller="mbopCtrl">
+<html lang="en-us" ng-app="mbopApp" >
 <head>
 	<meta charset="utf-8" http-equiv="Content-Type" content="text/html">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -20,16 +20,16 @@
             <form>
                 <span class='number'>1</span> Client name: <input type="text" id="clientName" ng-model="clientName"><br>
                 <span class='number'>2</span> Car title: <input type="text" id="carTitle" ng-model="carTitle"><br>
-                <span class='number'>3</span> Paste a Car Image URL - OR - Choose from selection  <input type="text" id="carImage" ng-model="carImage"><br>
-                Choose a Car <select ng-model="selectedCar" ng-options="x.model for x in cars">
-</select><br><br>
+                <span class='number'>3</span> Car Image URL <input type="text" id="carImage" ng-model="carImage"><br>
                 <span class='number'>4</span> Car Color: <input type="text" id="carColor" ng-model="carColor"><br>
                 <span class='number'>5</span> Total MSRP: <input type="text" id="totalMsrp" ng-model="totalMsrp"><br>
                 <span class='number'>6</span> Get E-Price Certificate Savings: <input type="text" id="ePrice" ng-model="ePrice"><br>
                 <span class='number'>7</span> Mercedes-Benz of Orland Park Savings: <input type="text" id="mbopSavings" ng-model="mbopSavings"><br>
                 <span class='number'>8</span> Net Sales Price: <input type="text" id="netPrice" ng-model="netPrice"><br>
                 <span class='number'>9</span> Agent Phone#: <input type="text" id="agentPhone" ng-model="agentPhone"><br>
-                <span class='number'>10</span> Disclaimer: <textarea type="text-area" rows="4" id="carImage" ng-model="disclaimer"></textarea><br>
+                <span class='number'>10</span> Agent Name: <input type="text" id="agentName" ng-model="agentName"><br>
+                <span class='number'>11</span> Agent Title: <input type="text" id="agentTitle" ng-model="agentTitle"><br>
+                <span class='number'>12</span> Disclaimer: <textarea type="text-area" rows="4" id="carImage" ng-model="disclaimer"></textarea><br>
                 <button onclick="copyToClipboard('#code-box')" class="copy-code-button">COPY CODE</button>
                 
             </form>
@@ -39,59 +39,15 @@
         
 <!--        BEGIN Visual View section-->
         <div class="col-sm-7 middle">
-           <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-            <html xmlns="http://www.w3.org/1999/xhtml">
-              <head>
-                <meta http-equiv="content-type" content="text/html; charset=utf-8">
-                <!--[if !mso]><!-->
-                <meta http-equiv="x-ua-compatible" content="IE=edge">
-                <!--<![endif]-->
-                <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                <title></title>
-                <!--[if (gte mso 9)|(IE)]>
-                <style>
-                  table {
-                  border-collapse:collapse;
-                  }
-                </style>
-                <![endif]-->
-
-              <style type="text/css">
-                @media screen and (max-width: 400px){
-                    .two-column .column,.three-column .column{
-                        max-width:100% !important;
-                    }
-
-            }	@media screen and (max-width: 400px){
-                    .two-column img{
-                        max-width:100% !important;
-                    }
-
-            }	@media screen and (max-width: 400px){
-                    .three-column img{
-                        max-width:50% !important;
-                    }
-
-            }	@media screen and (min-width: 401px) and (max-width: 620px){
-                    .three-column .column{
-                        max-width:33% !important;
-                    }
-
-            }	@media screen and (min-width: 401px) and (max-width: 620px){
-                    .two-column .column{
-                        max-width:50% !important;
-                    }
-
-            }</style></head>
-              <body style="margin: 0 !important;padding:0;background-color: #222222;">
+           
                 <center style="width:100%;table-layout:fixed;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;">
-                  <div style="max-width:600px;margin:0 auto;background-color:#222222;color:#000000;font-family:Arial, Helvetica, sans-serif;">
+                  <div style="max-width:600px;margin:0 auto;background-color:#000000;color:#000000;font-family:Arial, Helvetica, sans-serif;">
                     <!--[if (gte mso 9)|(IE)]>
                     <table width="600" align="center">
                       <tr>
                         <td>
                           <![endif]-->
-                    <table style="margin:0 auto;width:100%;max-width:600px;" align="center" cellpadding="0" cellspacing="0" border="0" bgcolor="#222222">
+                    <table style="margin:0 auto;width:100%;max-width:600px;" align="center" cellpadding="0" cellspacing="0" border="0" bgcolor="#000000">
                       <tr>
                         <td style="padding-top:0;padding-bottom:0;padding-left:0;padding-right:0;">
                           <!--begin main table-->
@@ -100,7 +56,7 @@
                               <td style="padding-top:0;padding-bottom:0;padding-left:0;padding-right:0;">
                                 <table width="100%">
                                   <tr>
-                                    <td style="background-color:#222222;color:#dddddd;font-size:.6em;padding-top:0px;padding-bottom:5px;padding-right:10px;padding-left:10px;text-align:right;width:100%;">
+                                    <td style="background-color:#000000;color:#dddddd;font-size:.6em;padding-top:0px;padding-bottom:5px;padding-right:10px;padding-left:10px;text-align:right;width:100%;">
                                       <p style="font-size:1px;color:#dddddd;">Mercedes-Benz of Orland Park</p>
                                       <p style="margin:0;"><a href="*|ARCHIVE|*" style="color:#dddddd;text-decoration:underline;font-weight:lighter;">View online</a>
                                     </p>
@@ -142,7 +98,7 @@
                                     <td class="padding-top:10px;padding-bottom:10px;padding-left:10px;padding-right:10px;">
                                       <table style="width:100%;border-spacing:0;font-family:sans-serif;font-size:14px;text-align:left;" cellpadding="0" cellspacing="0" border="0">
                                         <tr>
-                                          <td valign="top" style="font-family:arial, helvetica, sans-serif;font-size:.7em;letter-spacing:.05em;line-height:13px;color:#EFEFEF;padding:10px 15px 13px 10px;background-color:#000000;">
+                                          <td valign="top" style="font-family:arial, helvetica, sans-serif;font-size:.7em;letter-spacing:.05em;line-height:13px;color:#EFEFEF;padding:12px 15px 13px 10px;background-color:#000000;">
                                             Mercedes-Benz of Orland Park<br><a href="https://www.orlandpark.mercedesdealer.com/hours.aspx?utm_source=MailChimp&amp;utm_medium=emailBlast&amp;utm_campaign=newsletter" style="color:#EFEFEF;text-decoration:none;">8430 W.159th Street, Orland Park, IL 60462</a>
                                             <br><a href="tel:17089800586" style="color:#EFEFEF;text-decoration:none;">(708) 980-0586</a>
                                           </td>
@@ -164,7 +120,7 @@
                             <td style="color:#000000;font-family:Arial, Helvetica, sans-serif;padding-top:0;padding-bottom:0;padding-left:0;padding-right:0;">
                               <table width="100%">
                                 <tr>
-                                  <td style="color:#EFEFEF;font-family:Arial, Helvetica, sans-serif;padding:15px 5px 15px 5px;text-align:left;letter-spacing:.09em;font-size:14px;line-height:19px;">
+                                  <td style="color:#a9a6a6;font-family:Arial, Helvetica, sans-serif;padding:15px 5px 5px 5px;text-align:left;letter-spacing:.09em;font-size:14px;line-height:19px;">
                                       
                                     <p class="client-name">Hello {{clientName}}</p>
                                       
@@ -195,25 +151,17 @@
                               <a href="https://www.orlandpark.mercedesdealer.com/?utm_source=MailChimp&amp;utm_medium=emailBlast&amp;utm_campaign=newsletter" target="_blank"><span class="car-image"></span><img src="{{carImage}}" alt="" style="display:block;width: 100%;max-width: 600px;" border="0"></a>
                             </td>
                           </tr>
-                              
-<!--                          carImage by Drop-down Selection-->
-                          <tr>
-                            <td style="padding-top:0;padding-bottom:0;padding-left:0;padding-right:0;">
-                              <a href="https://www.orlandpark.mercedesdealer.com/?utm_source=MailChimp&amp;utm_medium=emailBlast&amp;utm_campaign=newsletter" target="_blank"><img src="{{selectedCar.imgUrl}}" alt="" style="display:block;width: 100%;max-width: 600px;" border="0"></a>
-                            </td>
-                          </tr>
-                              
 <!--                              carInfo-->
                           <tr>
-                            <td style="color:#000000;font-family:Arial, Helvetica, sans-serif;padding-top:0;padding-bottom:0;padding-left:0;padding-right:0;">
+                            <td style="color:#EFEFEF;font-family:Arial, Helvetica, sans-serif;padding-top:0;padding-bottom:0;padding-left:0;padding-right:0;">
                               <table width="100%">
                                 <tr>
                                   <td style="color:#EFEFEF;font-family:Arial, Helvetica, sans-serif;padding:15px 5px 15px 5px;text-align:left;letter-spacing:.09em;font-size:13px;line-height:18px;">
                                       <ul style="list-style: none; margin:0;padding:0;">
-                                          <li class="car-color">{{carColor}}</li>
-                                          <li class="total-msrp">Total MSRP: ${{totalMsrp}}</li>
-                                          <li class="e-price">Get E-Price Certificate Savings: ${{ePrice}}</li>
-                                          <li class="mbop-savings">Mercedes-Benz of Orland Park Savings: ${{mbopSavings}}</li>
+                                          <li class="car-color">Color: <span style="color:#b8b6b6;">{{carColor}}</span></li>
+                                          <li class="total-msrp">Total MSRP: <span style="color:#b8b6b6;">${{totalMsrp}}</span></li>
+                                          <li class="e-price">Get E-Price Certificate Savings: <span style="color:#b8b6b6;">${{ePrice}}</span></li>
+                                          <li class="mbop-savings">Mercedes-Benz of Orland Park Savings: <span style="color:#b8b6b6;">${{mbopSavings}}</span></li>
                                       </ul>
                                   </td>
                                 </tr>
@@ -223,10 +171,10 @@
                         
 <!--                              offer content-->
                             <tr>
-                            <td style="color:#000000;font-family:Arial, Helvetica, sans-serif;padding-top:0;padding-bottom:0;padding-left:0;padding-right:0;">
+                            <td style="color:#a9a6a6;font-family:Arial, Helvetica, sans-serif;padding-top:0;padding-bottom:0;padding-left:0;padding-right:0;">
                               <table width="100%">
                                 <tr>
-                                  <td style="color:#EFEFEF;font-family:Arial, Helvetica, sans-serif;padding:15px 5px 15px 5px;text-align:left;letter-spacing:.09em;font-size:14px;line-height:19px;">
+                                  <td style="color:#a9a6a6;font-family:Arial, Helvetica, sans-serif;padding:15px 5px 15px 5px;text-align:left;letter-spacing:.09em;font-size:14px;line-height:19px;">
                                       
                                     <p style="margin-top:0;margin-left:0;margin-right:0;font-size:.9em;margin-bottom:10px;">Net Sales Price: ${{netPrice}}<span class="net-price"></span> plus tax, title, license, registration and doc fees
 *If you think this price is great, many times it gets better! More than 50% of our clients qualify for additional fleet incentives. Please contact me at your earliest convenience so we can discuss additional savings. </p>
@@ -240,20 +188,20 @@
                               
 <!--                              offer content-->
                             <tr>
-                            <td style="color:#000000;font-family:Arial, Helvetica, sans-serif;padding-top:0;padding-bottom:0;padding-left:0;padding-right:0;">
+                            <td style="color:#a9a6a6;font-family:Arial, Helvetica, sans-serif;padding-top:0;padding-bottom:0;padding-left:0;padding-right:0;">
                               <table width="100%">
                                 <tr>
-                                  <td style="color:#EFEFEF;font-family:Arial, Helvetica, sans-serif;padding:15px 5px 15px 5px;text-align:left;letter-spacing:.09em;font-size:14px;line-height:19px;">
+                                  <td style="color:#a9a6a6;font-family:Arial, Helvetica, sans-serif;padding:15px 5px 15px 5px;text-align:left;letter-spacing:.09em;font-size:14px;line-height:19px;">
                                       
                                     <p style="margin-top:0;margin-left:0;margin-right:0;font-size:.9em;margin-bottom:10px;">Sincerely,<br>
-                                      John Doe<br>
-                                      Manager<br>
+                                      <span class="agent-name">{{agentName}}</span><br>
+                                      <span class="agent-title">{{agentTitle}}</span><br>
                                       </p>
                                       
-                                      <p style="margin-top:0;margin-left:0;margin-right:0;font-size:.9em;margin-bottom:10px;">Mercedes-Benz of Orland Park<br>
+                                      <p style="margin-top:0;margin-left:0;margin-right:0;font-size:.9em;margin-bottom:10px;"><span style="color:#EFEFEF;">Mercedes-Benz of Orland Park</span><br>
                                       8430 W.159th Street, Orland Park, IL 60462 <br>
-                                      <a hred="tel:7089800586"style="color: #efefef;">(708) 980-0586</a><br>
-                                          <a hred="www.mbop.com" style="color: #ffffff;">www.mbop.com</a>
+                                      <a hred="tel:7089800586"style="color: #a9a6a6;">(708) 980-0586</a><br>
+                                          <a hred="www.mbop.com" style="color: #a9a6a6;">www.mbop.com</a>
                                       </p>
                                   </td>
                                 </tr>
@@ -323,8 +271,6 @@
             <![endif]-->
             </div>
             </center>
-            </body>
-            </html>
             
         </div>
         
@@ -334,7 +280,7 @@
     
 <!--        BEGIN HTML Code Box-->
         <div id="code-box">
-           &lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;
+         &lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;
             &lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
               &lt;head&gt;
                 &lt;meta http-equiv="content-type" content="text/html; charset=utf-8"&gt;
@@ -378,15 +324,15 @@
                     }
 
             }&lt;/style&gt;&lt;/head&gt;
-              &lt;body style="margin: 0 !important;padding:0;background-color: #222222;"&gt;
+              &lt;body style="margin: 0 !important;padding:0;background-color: #000000;"&gt;
                 &lt;center style="width:100%;table-layout:fixed;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;"&gt;
-                  &lt;div style="max-width:600px;margin:0 auto;background-color:#222222;color:#000000;font-family:Arial, Helvetica, sans-serif;"&gt;
+                  &lt;div style="max-width:600px;margin:0 auto;background-color:#000000;color:#000000;font-family:Arial, Helvetica, sans-serif;"&gt;
                     &lt;!--[if (gte mso 9)|(IE)]&gt;
                     &lt;table width="600" align="center"&gt;
                       &lt;tr&gt;
                         &lt;td&gt;
                           &lt;![endif]--&gt;
-                    &lt;table style="margin:0 auto;width:100%;max-width:600px;" align="center" cellpadding="0" cellspacing="0" border="0" bgcolor="#222222"&gt;
+                    &lt;table style="margin:0 auto;width:100%;max-width:600px;" align="center" cellpadding="0" cellspacing="0" border="0" bgcolor="#000000"&gt;
                       &lt;tr&gt;
                         &lt;td style="padding-top:0;padding-bottom:0;padding-left:0;padding-right:0;"&gt;
                           &lt;!--begin main table--&gt;
@@ -395,7 +341,7 @@
                               &lt;td style="padding-top:0;padding-bottom:0;padding-left:0;padding-right:0;"&gt;
                                 &lt;table width="100%"&gt;
                                   &lt;tr&gt;
-                                    &lt;td style="background-color:#222222;color:#dddddd;font-size:.6em;padding-top:0px;padding-bottom:5px;padding-right:10px;padding-left:10px;text-align:right;width:100%;"&gt;
+                                    &lt;td style="background-color:#000000;color:#dddddd;font-size:.6em;padding-top:0px;padding-bottom:5px;padding-right:10px;padding-left:10px;text-align:right;width:100%;"&gt;
                                       &lt;p style="font-size:1px;color:#dddddd;"&gt;Mercedes-Benz of Orland Park&lt;/p&gt;
                                       &lt;p style="margin:0;"&gt;&lt;a href="*|ARCHIVE|*" style="color:#dddddd;text-decoration:underline;font-weight:lighter;"&gt;View online&lt;/a&gt;
                                     &lt;/p&gt;
@@ -437,7 +383,7 @@
                                     &lt;td class="padding-top:10px;padding-bottom:10px;padding-left:10px;padding-right:10px;"&gt;
                                       &lt;table style="width:100%;border-spacing:0;font-family:sans-serif;font-size:14px;text-align:left;" cellpadding="0" cellspacing="0" border="0"&gt;
                                         &lt;tr&gt;
-                                          &lt;td valign="top" style="font-family:arial, helvetica, sans-serif;font-size:.7em;letter-spacing:.05em;line-height:13px;color:#EFEFEF;padding:10px 15px 13px 10px;background-color:#000000;"&gt;
+                                          &lt;td valign="top" style="font-family:arial, helvetica, sans-serif;font-size:.7em;letter-spacing:.05em;line-height:13px;color:#EFEFEF;padding:12px 15px 13px 10px;background-color:#000000;"&gt;
                                             Mercedes-Benz of Orland Park&lt;br&gt;&lt;a href="https://www.orlandpark.mercedesdealer.com/hours.aspx?utm_source=MailChimp&amp;utm_medium=emailBlast&amp;utm_campaign=newsletter" style="color:#EFEFEF;text-decoration:none;"&gt;8430 W.159th Street, Orland Park, IL 60462&lt;/a&gt;
                                             &lt;br&gt;&lt;a href="tel:17089800586" style="color:#EFEFEF;text-decoration:none;"&gt;(708) 980-0586&lt;/a&gt;
                                           &lt;/td&gt;
@@ -459,9 +405,9 @@
                             &lt;td style="color:#000000;font-family:Arial, Helvetica, sans-serif;padding-top:0;padding-bottom:0;padding-left:0;padding-right:0;"&gt;
                               &lt;table width="100%"&gt;
                                 &lt;tr&gt;
-                                  &lt;td style="color:#EFEFEF;font-family:Arial, Helvetica, sans-serif;padding:15px 5px 15px 5px;text-align:left;letter-spacing:.09em;font-size:14px;line-height:19px;"&gt;
+                                  &lt;td style="color:#a9a6a6;font-family:Arial, Helvetica, sans-serif;padding:15px 5px 5px 5px;text-align:left;letter-spacing:.09em;font-size:14px;line-height:19px;"&gt;
                                       
-                                    &lt;p&gt;Hello {{clientName}}&lt;/p&gt;
+                                    &lt;p class="client-name"&gt;Hello {{clientName}}&lt;/p&gt;
                                       
                                     &lt;p style="margin-top:0;margin-left:0;margin-right:0;font-size:.9em;margin-bottom:10px;"&gt;Thank you so much for submitting your inquiry through Get E-Price. We know that price is an important consideration for our clients and we believe in complete transparency when it comes to offers and terms; to that end, I have put together an exclusive price quote for you...&lt;/p&gt;
                                   &lt;/td&gt;
@@ -477,7 +423,7 @@
                                 &lt;tr&gt;
                                   &lt;td style="color:#f9f9f9;font-family:Arial, Helvetica, sans-serif;padding:0px 5px 5px 5px;text-align:left;letter-spacing:.09em;font-size:16px;line-height:19px;"&gt;
                                       
-                                    &lt;p&gt;{{carTitle}}&lt;/p&gt;
+                                    &lt;p class="car-title"&gt;{{carTitle}}&lt;/p&gt;
                                   &lt;/td&gt;
                                 &lt;/tr&gt;
                               &lt;/table&gt;
@@ -486,35 +432,21 @@
                               
 &lt;!--                          carImage by URL--&gt;
                           &lt;tr&gt;
-            
-            
-            
                             &lt;td style="padding-top:0;padding-bottom:0;padding-left:0;padding-right:0;"&gt;
-                              &lt;a href="https://www.orlandpark.mercedesdealer.com/?utm_source=MailChimp&amp;utm_medium=emailBlast&amp;utm_campaign=newsletter" target="_blank"&gt;&lt;img src="{{carImage}}" alt="" style="display:block;width: 100%;max-width: 600px;" border="0"&gt;&lt;/a&gt;
+                              &lt;a href="https://www.orlandpark.mercedesdealer.com/?utm_source=MailChimp&amp;utm_medium=emailBlast&amp;utm_campaign=newsletter" target="_blank"&gt;&lt;span class="car-image"&gt;&lt;/span&gt;&lt;img src="{{carImage}}" alt="" style="display:block;width: 100%;max-width: 600px;" border="0"&gt;&lt;/a&gt;
                             &lt;/td&gt;
                           &lt;/tr&gt;
-            
-&lt;!--                          carImage by Drop-down Selection--&gt;
-                          &lt;tr&gt;
-            
-            
-            
-                            &lt;td style="padding-top:0;padding-bottom:0;padding-left:0;padding-right:0;"&gt;
-                              &lt;a href="https://www.orlandpark.mercedesdealer.com/?utm_source=MailChimp&amp;utm_medium=emailBlast&amp;utm_campaign=newsletter" target="_blank"&gt;&lt;img src="{{selectedCar.imgUrl}}" alt="" style="display:block;width: 100%;max-width: 600px;" border="0"&gt;&lt;/a&gt;
-                            &lt;/td&gt;
-                          &lt;/tr&gt;
-                              
 &lt;!--                              carInfo--&gt;
                           &lt;tr&gt;
-                            &lt;td style="color:#000000;font-family:Arial, Helvetica, sans-serif;padding-top:0;padding-bottom:0;padding-left:0;padding-right:0;"&gt;
+                            &lt;td style="color:#EFEFEF;font-family:Arial, Helvetica, sans-serif;padding-top:0;padding-bottom:0;padding-left:0;padding-right:0;"&gt;
                               &lt;table width="100%"&gt;
                                 &lt;tr&gt;
-                                  &lt;td style="color:#EFEFEF;font-family:Arial, Helvetica, sans-serif;padding:15px 5px 15px 5px;text-align:left;letter-spacing:.09em;font-size:12px;line-height:18px;"&gt;
+                                  &lt;td style="color:#EFEFEF;font-family:Arial, Helvetica, sans-serif;padding:15px 5px 15px 5px;text-align:left;letter-spacing:.09em;font-size:13px;line-height:18px;"&gt;
                                       &lt;ul style="list-style: none; margin:0;padding:0;"&gt;
-                                          &lt;li&gt;{{carColor}}&lt;/li&gt;
-                                          &lt;li&gt;Total MSRP: ${{totalMsrp}}&lt;/li&gt;
-                                          &lt;li&gt;Get E-Price Certificate Savings: ${{ePrice}}&lt;/li&gt;
-                                          &lt;li&gt;Mercedes-Benz of Orland Park Savings: ${{mbopSavings}}&lt;/li&gt;
+                                          &lt;li class="car-color"&gt;Color: &lt;span style="color:#b8b6b6;"&gt;{{carColor}}&lt;/span&gt;&lt;/li&gt;
+                                          &lt;li class="total-msrp"&gt;Total MSRP: &lt;span style="color:#b8b6b6;"&gt;${{totalMsrp}}&lt;/span&gt;&lt;/li&gt;
+                                          &lt;li class="e-price"&gt;Get E-Price Certificate Savings: &lt;span style="color:#b8b6b6;"&gt;${{ePrice}}&lt;/span&gt;&lt;/li&gt;
+                                          &lt;li class="mbop-savings"&gt;Mercedes-Benz of Orland Park Savings: &lt;span style="color:#b8b6b6;"&gt;${{mbopSavings}}&lt;/span&gt;&lt;/li&gt;
                                       &lt;/ul&gt;
                                   &lt;/td&gt;
                                 &lt;/tr&gt;
@@ -524,14 +456,14 @@
                         
 &lt;!--                              offer content--&gt;
                             &lt;tr&gt;
-                            &lt;td style="color:#000000;font-family:Arial, Helvetica, sans-serif;padding-top:0;padding-bottom:0;padding-left:0;padding-right:0;"&gt;
+                            &lt;td style="color:#a9a6a6;font-family:Arial, Helvetica, sans-serif;padding-top:0;padding-bottom:0;padding-left:0;padding-right:0;"&gt;
                               &lt;table width="100%"&gt;
                                 &lt;tr&gt;
-                                  &lt;td style="color:#EFEFEF;font-family:Arial, Helvetica, sans-serif;padding:15px 5px 15px 5px;text-align:left;letter-spacing:.09em;font-size:14px;line-height:19px;"&gt;
+                                  &lt;td style="color:#a9a6a6;font-family:Arial, Helvetica, sans-serif;padding:15px 5px 15px 5px;text-align:left;letter-spacing:.09em;font-size:14px;line-height:19px;"&gt;
                                       
-                                    &lt;p style="margin-top:0;margin-left:0;margin-right:0;font-size:.9em;margin-bottom:10px;"&gt;Net Sales Price: ${{netPrice}} plus tax, title, license, registration and doc fees
+                                    &lt;p style="margin-top:0;margin-left:0;margin-right:0;font-size:.9em;margin-bottom:10px;"&gt;Net Sales Price: ${{netPrice}}&lt;span class="net-price"&gt;&lt;/span&gt; plus tax, title, license, registration and doc fees
 *If you think this price is great, many times it gets better! More than 50% of our clients qualify for additional fleet incentives. Please contact me at your earliest convenience so we can discuss additional savings. &lt;/p&gt;
-                                      &lt;p&gt;I will try to call you again later today to follow up on this information; in the meantime, you can reach me directly at {{agentPhone}}.&lt;/p&gt;
+                                      &lt;p&gt;I will try to call you again later today to follow up on this information; in the meantime, you can reach me directly at &lt;a href="tel:{{agentPhone}}" style="color:#efefef;"&gt;{{agentPhone}}&lt;/a&gt;&lt;span class="agent-phone"&gt;&lt;/span&gt;.&lt;/p&gt;
                                   &lt;/td&gt;
                                 &lt;/tr&gt;
                               &lt;/table&gt;
@@ -541,20 +473,20 @@
                               
 &lt;!--                              offer content--&gt;
                             &lt;tr&gt;
-                            &lt;td style="color:#000000;font-family:Arial, Helvetica, sans-serif;padding-top:0;padding-bottom:0;padding-left:0;padding-right:0;"&gt;
+                            &lt;td style="color:#a9a6a6;font-family:Arial, Helvetica, sans-serif;padding-top:0;padding-bottom:0;padding-left:0;padding-right:0;"&gt;
                               &lt;table width="100%"&gt;
                                 &lt;tr&gt;
-                                  &lt;td style="color:#EFEFEF;font-family:Arial, Helvetica, sans-serif;padding:15px 5px 15px 5px;text-align:left;letter-spacing:.09em;font-size:14px;line-height:19px;"&gt;
+                                  &lt;td style="color:#a9a6a6;font-family:Arial, Helvetica, sans-serif;padding:15px 5px 15px 5px;text-align:left;letter-spacing:.09em;font-size:14px;line-height:19px;"&gt;
                                       
                                     &lt;p style="margin-top:0;margin-left:0;margin-right:0;font-size:.9em;margin-bottom:10px;"&gt;Sincerely,&lt;br&gt;
-                                      John Doe&lt;br&gt;
-                                      Manager&lt;br&gt;
+                                      &lt;span class="agent-name"&gt;{{agentName}}&lt;/span&gt;&lt;br&gt;
+                                      &lt;span class="agent-title"&gt;{{agentTitle}}&lt;/span&gt;&lt;br&gt;
                                       &lt;/p&gt;
                                       
-                                      &lt;p style="margin-top:0;margin-left:0;margin-right:0;font-size:.9em;margin-bottom:10px;"&gt;Mercedes-Benz of Orland Park&lt;br&gt;
+                                      &lt;p style="margin-top:0;margin-left:0;margin-right:0;font-size:.9em;margin-bottom:10px;"&gt;&lt;span style="color:#EFEFEF;"&gt;Mercedes-Benz of Orland Park&lt;/span&gt;&lt;br&gt;
                                       8430 W.159th Street, Orland Park, IL 60462 &lt;br&gt;
-                                      &lt;a hred="tel:7089800586"style="color:#ffffff;&gt;(708) 980-0586&lt;/a&gt;&lt;br&gt;
-                                          &lt;a hred="www.mbop.com"style="color:#ffffff;"&gt;www.mbop.com&lt;/a&gt;
+                                      &lt;a hred="tel:7089800586"style="color: #a9a6a6;"&gt;(708) 980-0586&lt;/a&gt;&lt;br&gt;
+                                          &lt;a hred="www.mbop.com" style="color: #a9a6a6;"&gt;www.mbop.com&lt;/a&gt;
                                       &lt;/p&gt;
                                   &lt;/td&gt;
                                 &lt;/tr&gt;
@@ -590,7 +522,7 @@
                               &lt;table width="100%" border="0" cellspacing="0" cellpadding="0"&gt;
                                 &lt;tr&gt;
                                   &lt;td align="left" valign="top" style="font-family:arial, helvetica, sans-serif;font-size:.7em;line-height:12px;color:#929292;padding:20px 15px 26px 0px;"&gt;
-                                    &lt;p&gt;{{disclaimer}}&lt;/p&gt;
+                                    &lt;p class="disclaimer"&gt;{{disclaimer}}&lt;/p&gt;
                                     
                               &lt;/td&gt;
                             &lt;/tr&gt;
@@ -626,7 +558,6 @@
             &lt;/center&gt;
             &lt;/body&gt;
             &lt;/html&gt;
-            
         
         </div>
 <!--        END HTML Code Box-->

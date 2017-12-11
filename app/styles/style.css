@@ -6,6 +6,9 @@
 }
 
 /*general*/
+body {
+    background-color: #000000;
+}
 .code-generator-section {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #ffffff;
