@@ -33,4 +33,5 @@ $(".net-price").append("<span class='number'>8</span>");
 $(".agent-phone").append("<span class='number'>9</span>");
 $(".agent-name").append("<span class='number'>10</span>");
 $(".agent-title").append("<span class='number'>11</span>");
-$(".disclaimer").append("<span class='number'>12</span>");
+$(".agent-email").append("<span class='number'>12</span>");
+$(".disclaimer").append("<span class='number'>13</span>");
